@@ -4,10 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>Document</title>
+    <title>Contact Page</title>
 </head>
 <body>
-  <div class="dropdown">
+  <header>
+    <div class="logoImage">
+        <img src="./_images/Black Simple Online Education Logo.jpg" alt="logoImage" width="150" height="150">
+    </div>
+</header>
+
+<div class="dropdown">
     <button class="dropbtn">Menu</button>
     <div class="dropdown-content">
         <a href="index.html">Home</a>
@@ -23,24 +29,81 @@
         <a href="courseRegistration.html">Registration</a>
         <a href="contact.html">Contact</a>
     </div>
- <header>
-  <div class="logoImage">
-      <img src="./_images/Black Simple Online Education Logo.jpg" alt="logoImage" width="150" height="150">
-  </div>
-</header>
 
-    <div class="contact-details">
-        <main>
-          <form class="contact-form">
-            <label for="phone">Phone Number</label>
-            <input type="text" id="phone" name="phone" />
-            
-            <label for="email">Email Address</label>
-            <input type="email" id="email" name="email" />
-            
-            <div class="map"></div>
-          </form>
-        </main>
-      </div>      
+  <section>
+    <h2>Contact Form</h2>
+    <form method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="subject">Subject:</label>
+        <input type="text" id="subject" name="subject" required>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <div class="map-container">
+
+    <h3>Bloemfontein Office</h3>
+    <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14485.001137376524!2d26.21312106681551!3d-29.118013828550933!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e8b612e23acbd57%3A0xe8c6f50d5dbff7c0!2s61%20Second%20Ave%2C%20Westdene%2C%20Bloemfontein%2C%209301%2C%20South%20Africa!5e0!3m2!1sen!2sza!4v1690382876137!5m2!1sen!2sza"
+        width="600"
+        height="450"
+        style="border:0;"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+
+    <h3>Cape Town Office</h3>
+    <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3237.9918030412795!2d18.42199951526504!3d-33.90769338064286!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1dcc676a6adcb591%3A0x504356f64384b7b5!2s5%20Silo%20Square%2C%20Victoria%20%26%20Alfred%20Waterfront%2C%20Cape%20Town%2C%208002%2C%20South%20Africa!5e0!3m2!1sen!2sza!4v1690382876137!5m2!1sen!2sza"
+        width="600"
+        height="450"
+        style="border:0;"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+
+    <h3>Durban Office</h3>
+    <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3454.3022637524696!2d31.131917315207176!3d-29.727457081990265!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1ef7aa13470b4dbf%3A0x2c9d770a25f2b29d!2s34%20Richefond%20Cir%2C%20Umhlanga%20Ridge%2C%20Umhlanga%2C%204319%2C%20South%20Africa!5e0!3m2!1sen!2sza!4v1690382876137!5m2!1sen!2sza"
+        width="600"
+        height="450"
+        style="border:0;"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+</div>
+
+
+  <footer>
+    <nav class="footer-nav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="sixmonthcourses.html">Six Month Courses</a></li>
+            <li><a href="sixweekcourses.html">Six Week Courses</a></li>
+            <li><a href="sixmonthcoursefirstaid.html">Six Month Course - First Aid</a></li>
+            <li><a href="sixmonthcoursesewing.html">Six Month Course - Sewing</a></li>
+            <li><a href="sixmonthcourselandscaping.html">Six Month Course - Landscaping</a></li>
+            <li><a href="sixmonthcourselifeskills.html">Six Month Course - Life Skills</a></li>
+            <li><a href="childminding.html">Six Week Course - Child Minding</a></li>
+            <li><a href="cooking.html">Six Week Course - Cooking</a></li>
+            <li><a href="gardenmaintenance.html">Six Week Course - Garden Maintenance</a></li>
+            <li><a href="courseRegistration.html">Registration</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</footer>
+
 </body>
 </html>

@@ -1,77 +1,108 @@
 body {
-    background-color: #0A1F33; 
+    background-color: white;
     font-family: "Helvetica", "Arial", sans-serif;
+    color:white;
     margin: 0;
     padding: 0;
 }
 
 h3 {
     font-size: 20px;
-    color: #E0E0E0; 
+    color: #E0E0E0;
 }
 
 p {
     font-size: 16px;
-    color: #E0E0E0; 
+    color: white;
 }
 
-/* Dropdown Button */
+.background-page1{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    height: 100%;
+}
+
+.background-page1 {
+    background-image: url(_images/StockCake-Serene\ University\ Campus_1727279916.jpg);
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #1db954;
+}
+
 .dropdown {
     position: relative;
     display: inline-block;
 }
 
-/* Dropdown button styles */
 .dropbtn {
-    background-color: #0056b3; 
+    background-color: #4A5C6A;
     color: white;
     padding: 10px 16px;
     font-size: 16px;
     border: none;
     cursor: pointer;
-    border-radius: 5px; 
+    border-radius: 5px;
 }
 
 .dropdown-content {
-    display: none; 
+    display: none;
     position: absolute;
-    background-color: #2B4D66; /* Dropdown background */
-    min-width: 160px; 
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); 
-    z-index: 1; 
+    background-color: #2B4D66;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
 }
 
-/* Links inside the dropdown */
 .dropdown-content a {
-    color: #E0E0E0; 
-    padding: 12px 16px; 
-    text-decoration: none; 
-    display: block; /
+    color: #E0E0E0;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
 }
-
 
 .dropdown-content a:hover {
-    background-color: #4DA8DA; 
+    background-color: #4DA8DA;
 }
 
-
 .dropdown:hover .dropdown-content {
-    display: block; 
+    display: block;
 }
 
 .dropdown:hover .dropbtn {
-    background-color: #007BFF; 
+    background-color: #4A5C6A;
 }
-
 
 @media (max-width: 768px) {
     .dropbtn {
-        padding: 8px 12px; 
-        font-size: 14px; /
+        padding: 8px 12px;
+        font-size: 14px;
     }
 
     .dropdown-content {
-        min-width: 120px; 
+        min-width: 120px;
     }
 }
 
@@ -84,13 +115,13 @@ header .logo {
     width: 100px;
     height: 100px;
     margin: 0 auto;
-    border-radius: 50%;
+    border-radius: 100%;
 }
 
 .intro-text {
     margin-top: 20px;
     font-size: 1.2rem;
-    color: #0056b3; 
+    color: #0056b3;
 }
 
 .course-buttons {
@@ -98,137 +129,107 @@ header .logo {
 }
 
 .course-btn {
-    background-color: #007BFF; 
+    background-color: #4A5C6A;
     color: white;
     padding: 10px 20px;
     margin: 10px;
-    border: none;
+    border: 1px solid #0A1F33; 
     border-radius: 5px;
     font-size: 1rem;
+    transition: background-color 0.3s;
 }
 
 .course-btn:hover {
-    background-color: #0056b3; 
+    background-color: #3B4A54;
 }
-
-.courses-overview {
-    padding: 20px;
-}
-
-header .nav-btn {
-    color: white;
-    padding: 10px 15px;
-    border: none;
-    border-radius: 5px;
-    margin-right: 10px;
-}
-
-.course-section {
-    display: flex;
-    align-items: center;
-    margin: 10px 0;
-}
-
-.course-image {
-    margin-right: 15px;
-}
-
-
-nav {
-    display: flex; 
-    justify-content: center; 
-    gap: 20px; 
-}
-
 
 .nav-btn {
     display: inline-block;
-    padding: 10px 20px; 
-    background-color: #0056b3; 
-    color: white; /* Text color */
-    text-decoration: none; 
-    border-radius: 5px; 
-    transition: background-color 0.3s ease; 
+    padding: 10px 20px;
+    background-color: #4A5C6A;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    border: 1px solid #0A1F33; 
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
 }
 
 .nav-btn:hover {
-    background-color: #003f7f; 
+    background-color: #3B4A54;
 }
 
 .nav-btn:focus {
-    outline: 2px solid #0056b3; 
+    outline: 2px solid #4A5C6A;
     outline-offset: 2px;
 }
 
 h2, h3 {
-    color: #007BFF; 
+    color: #007BFF;
 }
 
 #courseForm {
-    background-color: #1A2530; 
+    background-color: #1A2530;
     padding: 20px;
     border-radius: 8px;
+    border: 1px solid #1A2530; 
     margin-bottom: 20px;
 }
 
-label {
-    display: block; 
-    margin-top: 10px;
-    color: #E0E0E0; 
-}
 
 input[type="text"],
 input[type="number"],
 input[type="email"] {
-    width: calc(100% - 20px); 
+    width: calc(100% - 20px);
     padding: 10px;
     margin-top: 5px;
-    border: 1px solid #0056b3; 
+    border: 1px solid #2B4D66; 
     border-radius: 4px;
-    background-color: #2B4D66; 
-    color: white; /* Input text color */
+    background-color: #2B4D66;
+    color: white;
 }
 
 input[type="checkbox"] {
-    margin-right: 10px; 
+    margin-right: 10px;
 }
 
 button {
-    background-color: #007BFF; 
+    background-color: #4A5C6A;
     color: white;
     padding: 10px 20px;
-    border: none;
+    border: 1px solid #4A5C6A; 
     border-radius: 5px;
-    cursor: pointer; 
-    margin-top: 15px; 
-    transition: background-color 0.3s; 
+    cursor: pointer;
+    margin-top: 15px;
+    transition: background-color 0.3s;
 }
 
 button:hover {
-    background-color: #0056b3; 
+    background-color: #3B4A54;
 }
 
 .invoice {
-    background-color: #1A2530; 
+    background-color: #1A2530;
     padding: 20px;
     border-radius: 8px;
+    border: 1px solid #1A2530; 
 }
 
 .invoice h2 {
-    color: #FFD700; 
+    color: #FFD700;
 }
 
 .invoice p {
-    margin: 5px 0; 
+    margin: 5px 0;
 }
 
 @media (max-width: 768px) {
     #courseForm {
-        padding: 15px; 
+        padding: 15px;
     }
 
     button {
-        width: 100%; 
+        width: 100%;
     }
 }
 
@@ -242,8 +243,41 @@ button:hover {
 }
 
 .map {
-    background-color: #0056b3; /* Map background */
+    background-color: #0056b3;
     height: 200px;
     margin-top: 20px;
     border-radius: 10px;
+    border: 1px solid #0056b3; 
+}
+
+.course-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.course-section {
+    background-color: #f9f9f9;
+    border: 1px solid #f9f9f9; 
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    margin: 10px;
+    width: 30%;
+    text-align: center;
+}
+
+.course-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #333;
+    color: #fff;
+    margin-top: 20px;
 }
